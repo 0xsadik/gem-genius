@@ -1,0 +1,9 @@
+
+.card {
+    padding: 5% 5%;
+}
+
+.card:hover {
+    background-color: #A6B37D;
+    color: #fff;
+}
