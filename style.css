@@ -1,9 +1,16 @@
 
+body {
+    background-color: #F9D689;
+    padding: 5% 5%;
+}
+
+
+
 .card {
     padding: 5% 5%;
 }
 
-.card:hover {
-    background-color: #A6B37D;
+/* .card:hover {
+    /* background-color: #96CEB4; */
     color: #fff;
-}
+} */
