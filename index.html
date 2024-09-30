@@ -12,11 +12,13 @@
 <body class="m-8">
     <header>
         <div>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 rounded-md">
                 <div class="navbar-start">
-                  <h1 class="text-4xl ">Interactive</h1>
-                  <br>
-                  <p>Geometry Genius</p>
+                  <div>
+                    <h1 class="text-4xl ">Interactive</h1>
+                    
+                    <p>Geometry Genius</p>
+                  </div>
                 </div>
                 <div class="navbar-end">
                   <a class="btn">Blog</a>
@@ -39,9 +41,9 @@
                       <h2 class="card-title">Triangle</h2>
                       <p class="text-xl">Area(A) = 0.5 x b x h</p>
                       <div>
-                        <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="b">
+                        <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm bg-teal-700  text-white" type="text" placeholder="b">
                         <span>cm</span>
-                        <input id="triangle-height" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="h">
+                        <input id="triangle-height" class="w-24 text-2xl p-2 rounded-sm bg-teal-700 text-white" type="text" placeholder="h">
                         <span class="mr-4 ml-2">cm</span>
                       </div>
                       <div>
@@ -64,9 +66,9 @@
                       <h2 class="card-title">Rectangle</h2>
                       <p class="text-xl">Area(A) = w x l</p>
                       <div>
-                        <input id="rectangle-width" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="w">
+                        <input id="rectangle-width" class="w-24 text-2xl p-2 rounded-sm bg-teal-700 text-white" type="text" placeholder="w">
                         <span>cm</span>
-                        <input id="rectangle-length" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="l">
+                        <input id="rectangle-length" class="w-24 text-2xl p-2 rounded-sm bg-teal-700 text-white" type="text" placeholder="l">
                         <span class="mr-4 ml-2">cm</span>
                       </div>
                       <div>
@@ -89,9 +91,9 @@
                       <h2 class="card-title">Parallelogram</h2>
                       <p class="text-xl">Area(A) = b x h</p>
                       <div>
-                        <input id="para-base" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="b">
+                        <input id="para-base" class="w-24 text-2xl p-2 rounded-sm bg-teal-700 text-white" type="text" placeholder="b">
                         <span>cm</span>
-                        <input id="para-height" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="h">
+                        <input id="para-height" class="w-24 text-2xl p-2 rounded-sm bg-teal-700 text-white" type="text" placeholder="h">
                         <span class="mr-4 ml-2">cm</span>
                       </div>
                       <div>
@@ -113,9 +115,9 @@
                       <h2 class="card-title">Rhombus</h2>
                       <p class="text-xl">Area(A) = 0.5 x d1 x d2</p>
                       <div>
-                        <input id="rombos-d1" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="d1">
+                        <input id="rombos-d1" class="w-24 text-2xl p-2 rounded-sm bg-teal-700 text-white" type="text" placeholder="d1">
                         <span>cm</span>
-                        <input id="rombos-d2" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="d2">
+                        <input id="rombos-d2" class="w-24 text-2xl p-2 rounded-sm bg-teal-700 text-white" type="text" placeholder="d2">
                         <span class="mr-4 ml-2">cm</span>
                       </div>
                       <div>
@@ -123,6 +125,56 @@
                       </div>
                       <div class="card-actions ">
                         <button class="btn btn-primary w-full" onclick="rombosArea()">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                
+                
+                <!-- Pentagon card -->
+                <div class="card card-compact bg-base-100 w-96 shadow-xl mt-5">
+                    <figure>
+                      <img
+                        src="images/pentagon.png" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Pentagon</h2>
+                      <p class="text-xl">Area(A) = 0.5 x p x b</p>
+                      <div>
+                        <input id="penta-p" class="w-24 text-2xl p-2 rounded-sm bg-teal-700 text-white" type="text" placeholder="p">
+                        <span>cm</span>
+                        <input id="penta-b" class="w-24 text-2xl p-2 rounded-sm bg-teal-700 text-white" type="text" placeholder="b">
+                        <span class="mr-4 ml-2">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-xl">Area: <span id="penta-area"></span> <span>cm <sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions ">
+                        <button class="btn btn-primary w-full" onclick="pentaArea()">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                
+                
+                <!-- Ellipse card -->
+                <div class="card card-compact bg-base-100 w-96 shadow-xl mt-5">
+                    <figure>
+                      <img
+                        src="images/ellipse.png" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Ellipse</h2>
+                      <p class="text-xl">Area(A) = PI x a x b</p>
+                      <div>
+                        <input id="ellipse-a" class="w-24 text-2xl p-2 rounded-sm bg-teal-700 text-white" type="text" placeholder="a">
+                        <span>cm</span>
+                        <input id="ellipse-b" class="w-24 text-2xl p-2 rounded-sm bg-teal-700 text-white" type="text" placeholder="b">
+                        <span class="mr-4 ml-2">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-xl">Area: <span id="ellipse-area"></span> <span>cm <sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions ">
+                        <button class="btn btn-primary w-full" onclick="ellipseArea()">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -139,5 +191,7 @@
     <script src="./scripts/rectangle-calculation.js"></script>
     <script src="./scripts/parallelogram-calculation.js"></script>
     <script src="./scripts/rombos-calculation.js"></script>
+    <script src="./scripts/penta-calculation.js"></script>
+    <script src="./scripts/ellipse-calculation.js"></script>
 </body>
 </html>

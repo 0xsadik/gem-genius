@@ -1,2 +1,2 @@
 # gem-genius
-### simple Geometry geius project 
+### simple Geometry calculation project 
